@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Web.Mvc;
-using RoomPlanner.WebHandlers;
+using RoomPlanner.WebHandlers.Handlers;
 
 namespace RoomPlanner.Website.Controllers
 {

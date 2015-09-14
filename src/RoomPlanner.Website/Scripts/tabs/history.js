@@ -32,7 +32,7 @@
 		renderData();
 
 		ui.loader.show();
-		loadDataXhr = $.post(urls.GetPlansHistory,
+		loadDataXhr = $.post(urls.GetHistory,
 			{
 				isShort: ui.isShortCheckbox.prop('checked')
 			},

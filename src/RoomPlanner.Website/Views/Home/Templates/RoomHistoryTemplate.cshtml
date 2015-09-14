@@ -1,4 +1,10 @@
-﻿<tr>
+﻿{{if ActionType == 1}}
+<tr class="roomCreated">
+{{else ActionType == 2 }}
+<tr class="roomRemoved">
+{{else}}
+<tr>
+{{/if}}
     <td class="ttDate">{{:Date}}</td>
     <td class="ttName">{{:Name}}</td>
     <td class="ttDescription">{{:Description}}</td>

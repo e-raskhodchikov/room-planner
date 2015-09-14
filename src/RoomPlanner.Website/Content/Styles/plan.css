@@ -110,3 +110,11 @@
 		.historyTable .ttName {
 			width: 200px;
 		}
+
+		.historyTable tr.roomCreated {
+			background-color: lightgreen;
+		}
+
+		.historyTable tr.roomRemoved {
+			background-color: lightcoral;
+		}

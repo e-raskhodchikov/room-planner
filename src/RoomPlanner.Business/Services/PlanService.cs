@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using RoomPlanner.DataAccess;
 using RoomPlanner.Domain;
 
-namespace RoomPlanner.Business
+namespace RoomPlanner.Business.Services
 {
-	public class Service : IService
+	public class PlanService : IService
 	{
 		private readonly Dao dao;
 
-		public Service(Dao dao)
+		public PlanService(Dao dao)
 		{
 			this.dao = dao;
 		}

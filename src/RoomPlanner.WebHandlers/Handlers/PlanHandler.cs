@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using RoomPlanner.Business;
+using RoomPlanner.Business.Services;
 using RoomPlanner.WebHandlers.ClientData;
 using RoomPlanner.WebHandlers.Mappers;
 
-namespace RoomPlanner.WebHandlers
+namespace RoomPlanner.WebHandlers.Handlers
 {
     public class PlanHandler : IWebHandler
     {
-	    private readonly Service service;
-	    private readonly Mapper mapper;
+	    private readonly PlanService service;
+	    private readonly PlanMapper mapper;
 
-	    public PlanHandler(Service service, Mapper mapper)
+	    public PlanHandler(PlanService service, PlanMapper mapper)
 	    {
 		    this.service = service;
 		    this.mapper = mapper;
@@ -36,25 +36,6 @@ namespace RoomPlanner.WebHandlers
 	    public void RemoveRoom(string roomNameToRemove, string roomNameMoveTo, DateTime date)
 	    {
 
-	    }
-
-	    public RoomHistoryClientData[] GetHistory(bool isShort)
-	    {
-		    return new[]
-		    {
-			    new RoomHistoryClientData
-			    {
-				    Date = "12.09.2015",
-				    Name = isShort ? "" : "Кухня",
-				    Description = isShort ? "" : "стол × 1, стул × 2"
-			    },
-			    new RoomHistoryClientData
-			    {
-				    Date = "13.09.2015",
-				    Name = isShort ? "" : "Спальня",
-				    Description = isShort ? "" : "диван × 1, стол × 1, стул × 2"
-			    }
-		    };
 	    }
     }
 }

@@ -37,9 +37,12 @@
     <Compile Include="FurnitureAction.cs" />
     <Compile Include="FurnitureActionType.cs" />
     <Compile Include="FurnitureCount.cs" />
+    <Compile Include="FurnitureCountOnDate.cs" />
     <Compile Include="Plan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room.cs" />
+    <Compile Include="RoomActionType.cs" />
+    <Compile Include="RoomHistory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

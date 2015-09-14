@@ -92,6 +92,20 @@ select
 			}).ToList();
 		}
 
+		public List<FurnitureCountOnDate> GetFurnitureCountOnDates()
+		{
+			return Query<FurnitureCountOnDate>(@"
+select
+	Date,
+	RoomId,
+	Furniture,
+	sum(case when ActionType = 0 then 1 else -1 end) as Count
+	from FurnitureAction
+	group by RoomId, Furniture, Date
+	order by Date;
+").ToList();
+		}
+
 		public void CreateFurnitureAction(FurnitureAction furnitureAction)
 		{
 			Execute(@"

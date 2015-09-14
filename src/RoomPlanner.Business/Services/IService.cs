@@ -1,4 +1,4 @@
-﻿namespace RoomPlanner.Business
+﻿namespace RoomPlanner.Business.Services
 {
     public interface IService
     {

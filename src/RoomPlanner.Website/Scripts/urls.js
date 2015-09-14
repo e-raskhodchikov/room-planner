@@ -2,11 +2,12 @@
 
     'use strict';
 
-    var prefix = {
-        room: '/Room/',
-        furniture: '/Furniture/',
-        plan: '/Plan/'
-    };
+	var prefix = {
+		room: '/Room/',
+		furniture: '/Furniture/',
+		plan: '/Plan/',
+		history: '/History/'
+	};
 
     module.Urls = {
         CreateRoom: prefix.room + 'Create',
@@ -16,7 +17,8 @@
         MoveFurniture: prefix.furniture + 'Move',
 
         GetRoomPlan: prefix.plan + 'GetPlan',
-        GetPlansHistory: prefix.plan + 'GetHistory'
+
+        GetHistory: prefix.history + 'GetHistory'
     };
 
 })(App);
