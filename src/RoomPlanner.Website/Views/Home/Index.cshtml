@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "../_Layout.cshtml";
+}
+
+<div data-control="tabsControl" class="mainCol col">
+    <ul>
+        <li><a href="#tab-plan">Расположение</a></li>
+        <li><a href="#tab-history">История</a></li>
+    </ul>
+    <div id="tab-plan">
+        @Html.Partial("Tabs/Plan")
+    </div>
+    <div id="tab-history">
+        @Html.Partial("Tabs/History")
+    </div>
+</div>

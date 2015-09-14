@@ -1,0 +1,112 @@
+﻿html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.col {
+	float: left;
+	display: inline-block;
+
+}
+
+.mainCol {
+	width: 100%;
+	height: 100%;
+}
+
+.contentCol {
+	width: 80%;
+}
+
+.leftCon {
+	padding: 0 20px 20px 0;
+}
+
+.pad {
+	padding-bottom: 20px;
+}
+
+.link {
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+	.link:hover {
+		text-decoration: none;
+	}
+
+.icon {
+	display: inline-block;
+	cursor: pointer;
+	background: transparent;
+	padding-top: 1px;
+	padding-left: 1px;
+	font-weight: bold;
+}
+	.icon:hover {
+		color: darkgray;
+	}
+	.icon.iconRemove:before {
+		content: '×';
+	}
+	.icon.iconAdd:before {
+		content: '+';
+	}
+	.icon.iconMove:before {
+		content: '→';
+	}
+
+.room .iconRemove {
+	float: right;
+	margin-right: 10px;
+}
+
+.room {
+	background-color: #f4eddf;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px 0 10px 20px;
+	border: 1px solid #E5C401;
+	border-radius: 5px;
+}
+	.room:hover {
+		/*background-color: #f2d7a9;*/
+	}
+	.room .header {
+		font-weight: bold;
+		padding-bottom: 20px;
+	}
+
+.furniture {
+	background-color: #85C99F;
+	display: inline-block;
+	padding: 5px;
+	margin: 0 10px 10px 0;
+	border: 1px solid #0A9644;
+	border-radius: 5px;
+}
+	.furniture:hover {
+		background-color: #0a9644;
+	}
+
+.historyTable {
+	width: 100%;
+}
+	.historyTable,
+	.historyTable th,
+	.historyTable td {
+		border: 1px solid black;
+	}
+
+		.historyTable th,
+		.historyTable td {
+			padding: 0 10px;
+		}
+
+		.historyTable .ttDate {
+			width: 150px;
+		}
+		.historyTable .ttName {
+			width: 200px;
+		}

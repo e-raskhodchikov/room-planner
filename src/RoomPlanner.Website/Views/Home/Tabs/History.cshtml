@@ -1,0 +1,22 @@
+﻿<div class="pad">
+    <label><input type="checkbox" data-control="isShortControl">Только даты</label>
+</div>
+
+<table class="historyTable">
+    <thead>
+    <tr>
+        <th class="ttDate">Дата</th>
+        <th class="ttName">Комната</th>
+        <th class="ttDescription">Состояние</th>
+    </tr>
+    </thead>
+    <tbody data-control="historyPlaceholder"></tbody>
+</table>
+
+<div class="spinner-loader" data-control="loader">
+    Загрузка…
+</div>
+
+<script id="roomHistoryTemplate" type="text/x-jsrender">
+    @Html.Partial("Templates/RoomHistoryTemplate")
+</script>

@@ -1,0 +1,23 @@
+﻿<div class="leftCon col">
+    <div data-control="planDate"></div>
+</div>
+<div class="contentCol col">
+    <div data-control="content">
+        <div data-control="planPlaceholder"></div>
+        <div>
+            <span class="link" data-control="createRoom">+ Добавить комнату</span>
+        </div>
+    </div>
+    <div class="spinner-loader" data-control="loader">
+        Загрузка…
+    </div>
+</div>
+
+<div style="display: none">
+    @Html.Partial("Dialogs/CreateRoom")
+    @Html.Partial("Dialogs/CreateFurniture")
+</div>
+
+<script id="roomPlanTemplate" type="text/x-jsrender">
+    @Html.Partial("Templates/RoomPlanTemplate")
+</script>

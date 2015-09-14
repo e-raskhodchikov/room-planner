@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Расположение мебели</title>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="http://css-spinners.com/css/spinner/spinner.css" type="text/css"/>
+        @Styles.Render(BundleConfig.Urls.Content)
+
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="http://www.jsviews.com/download/jsrender.js"></script>
+        <script src="http://yastatic.net/underscore/1.6.0/underscore.js"></script>
+        @Scripts.Render(BundleConfig.Urls.Scripts)
+    </head>
+    <body>
+        <div class="pageContent">
+            @RenderBody()
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<div class="room" data-control="room">
+    <div class="header">
+        <span data-bind="RoomName">{{:Name}}</span>
+        <span class="icon iconRemove" data-control="removeRoom"></span>
+    </div>
+    <div class="furnitureContainer">
+        {{for Furnitures}}
+        <div class="furniture" data-control="furniture">
+            <span>
+                <span data-bind="FurnitureName">{{>Name}}</span>
+                ×
+                <span data-bind="FurnitureCount">{{>Count}}</span>
+            </span>
+            <span class="icon iconAdd" data-control="addFurniture"></span>
+            <span class="icon iconMove" data-control="moveFurniture"></span>
+        </div>
+        {{/for}}
+    </div>
+    <div>
+        <span class="link" data-control="createFurniture">+ Добавить мебель</span>
+    </div>
+</div>
